@@ -2,10 +2,10 @@ import React from 'react';
 
 const Section9right = () => {
   return (
-    <div className="h-[50%] w-full text-black lg:h-full lg:w-[50%] flex flex-col transition duration-300">
+    <div className="h-[50%] w-full text-black lg:h-full lg:w-[50%] flex flex-col ">
       <div className="h-[50%] w-full flex items-center justify-center">
         <div className="h-[80%] w-[80%] flex flex-col items-center justify-center">
-          <h1 className="text-lg sm:text-xl md:text-3xl lg:text-5xl font-bold text-center">
+          <h1 className="text-lg sm:text-xl md:text-3xl lg:text-4xl font-bold text-center">
             Zenly brings you timeless pieces of designs and comfort to make every moment of your life special.
           </h1>
         </div>

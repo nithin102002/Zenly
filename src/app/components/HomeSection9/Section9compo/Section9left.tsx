@@ -5,7 +5,7 @@ const Section9left = () => {
     <div className="h-[50%] w-full text-black lg:h-full lg:w-[50%] flex flex-col transition duration-300">
       <div className="h-[50%] w-full flex items-center justify-center">
         <div className="h-[80%] w-[80%] flex flex-col items-center justify-center">
-          <h1 className="text-xl sm:text-3xl md:text-5xl lg:text-7xl font-bold text-center">
+          <h1 className="text-xl sm:text-3xl md:text-3xl lg:text-6xl font-bold text-center">
             DISCOVER YOUR FASHION STYLE HERE!
           </h1>
         </div>

@@ -7,6 +7,7 @@ import HomeSection8 from "./components/HomeSection8/HomeSection8";
 import HomeSection3 from "./components/HomeSection3/HomeSection3";
 import HomeSection7 from "./components/HomeSection7/HomeSection7";
 import HomeSection9 from "./components/HomeSection9/HomeSection9";
+import HomeSection6 from "./components/HomeSection6/HomeSection6";
 import HomeSection10 from "./components/HomeSection10/HomeSection10";
 
 export default function Home() {
@@ -17,7 +18,8 @@ export default function Home() {
      <HomeSection3 />
      <HomeSection4/>
      <HomeSection5/>
-     <HomeSection7 />
+     <HomeSection6/>
+     <HomeSection7/>
      <HomeSection8/>
     <HomeSection9/>
     <HomeSection10/>

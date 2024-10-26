@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 
 export const NavBar = () => {
   const [isopen, setIsopen] = useState(false);
+  
   function getMenuClasses() {
     let menuClasses = [];
     if (isopen) {
@@ -11,7 +12,7 @@ export const NavBar = () => {
         "flex",
         "absolute",
         "top-[60px]",
-        "bg-[#161617]",
+        "bg-white",  // Changed background to white
         "w-full",
         "p-4",
         "left-0",
@@ -25,22 +26,22 @@ export const NavBar = () => {
   }
 
   return (
-    <nav className="bg-[#161617] text-white h-20 w-full p-4 sm:p-6 md:flex md:justify-between md:items-center">
+    <nav className="bg-white text-black sticky top-0 shadow z-50 h-20 w-full p-4 sm:p-6 md:flex md:justify-between md:items-center"> {/* Changed background to white */}
       <div className="container mx-auto flex justify-between items-center">
-        <a href="/" className="text-4xl font-bold">
-          Zenly
-        </a>
+        <Link href="/" className="flex items-center">
+          <img src="/assets/Primary.svg" alt="Zenly Logo" className="h-10 md:h-12" />
+        </Link>
         <div className={getMenuClasses()}>
-          <Link href="/" className="mx-2  font-bold hover:text-gray-300">
+          <Link href="/" className="mx-2 font-bold hover:text-gray-600">
             Home
           </Link>
-          <Link href="/about" className="mx-2 font-bold hover:text-gray-300">
+          <Link href="/about" className="mx-2 font-bold hover:text-gray-600">
             About
           </Link>
-          <Link href="/gallery" className="mx-2 font-bold hover:text-gray-300">
+          <Link href="/gallery" className="mx-2 font-bold hover:text-gray-600">
             Gallery
           </Link>
-          <Link href="/products" className="mx-2 font-bold hover:text-gray-300">
+          <Link href="/product" className="mx-2 font-bold hover:text-gray-600">
             Products
           </Link>
         </div>
@@ -53,8 +54,7 @@ export const NavBar = () => {
           >
             {isopen ? (
               <svg
-                className="w-6 h-6 text-white"
-                xmlns="http://www.w3.org/2000/svg"
+                className="w-6 h-6 text-black"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -68,8 +68,7 @@ export const NavBar = () => {
               </svg>
             ) : (
               <svg
-                className="w-6 h-6 text-white"
-                xmlns="http://www.w3.org/2000/svg"
+                className="w-6 h-6 text-black"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"

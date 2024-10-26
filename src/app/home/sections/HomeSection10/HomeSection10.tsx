@@ -22,7 +22,7 @@ const testimonials = [
 
 export default function HomeSection10() {
   return (
-    <div className="w-full py-16 px-4 lg:px-16 text-center">
+    <div className="w-full py-16 px-4 bg-[#f3f3f3] lg:px-16 text-center">
       {/* Section Heading */}
       <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8">
         Client Testimonials

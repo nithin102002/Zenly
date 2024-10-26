@@ -7,7 +7,7 @@ const HomeSection8 = () => {
         <h1 className='text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight tracking-wide shadow-lg'>
           GREAT THINGS IN BUSINESS ARE NEVER DONE <br /> BY ONE PERSON.{' '}
           <span className='text-[#FEAB17]'>
-            THEY'RE DONE BY <br /> A TEAM OF PEOPLE
+            THEY&apos;RE DONE BY <br /> A TEAM OF PEOPLE
           </span>
         </h1>
       </div>

@@ -4,7 +4,12 @@ import image4 from '../assets/image4.jpg';
 import image5 from '../assets/image5.jpg';
 import image6 from '../assets/image6.jpg';
 
-const HomeSection6Bottom = ({ onImageClick }) => {
+// Define the props type for the component
+interface HomeSection6BottomProps {
+  onImageClick: (index: number) => void; // Explicitly specify the type for onImageClick
+}
+
+const HomeSection6Bottom: React.FC<HomeSection6BottomProps> = ({ onImageClick }) => {
   const images = [image4, image5, image6];
 
   return (

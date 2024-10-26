@@ -14,7 +14,7 @@ export default function HomeSection2Bottom() {
           className="w-full h-full object-cover filter group-hover:grayscale-0 grayscale transition duration-300 transform group-hover:-translate-y-2 group-hover:shadow-lg"
         />
         <div className="absolute bottom-4 left-4 right-4 bg-[#A28497] text-white p-4 flex flex-col justify-center items-center transform translate-y-full group-hover:translate-y-0 transition-all duration-300 opacity-0 group-hover:opacity-100">
-          <p className="font-bold">Kid's Wear</p>
+          <p className="font-bold">Kid&apos;s Wear</p>
           <hr className="w-14 border-t-2 border-[#FFD700]" />
           <p className="text-sm">Comfortable and stylish clothing for children.</p>
         </div>

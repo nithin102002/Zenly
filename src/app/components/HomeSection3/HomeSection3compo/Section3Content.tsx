@@ -10,8 +10,8 @@ const Page3Content = () => {
         With every stitch and detail, we strive to deliver perfection.
       </h4>
       <p className="text-gray-600 text-xs sm:text-sm md:text-lg lg:text-xl xl:text-2xl font-normal mb-4 lg:mb-6 leading-relaxed">
-        “At Zenly Apparels, we blend modern trends with classic style to create apparel that
-        speaks to your unique sense of style."
+        &ldquo;At Zenly Apparels, we blend modern trends with classic style to create apparel that
+        speaks to your unique sense of style.&rdquo;
       </p>
       <div className="flex flex-col md:flex-row items-start md:items-center gap-5 lg:gap-10 text-xs sm:text-sm lg:text-lg xl:text-xl mb-5">
         <div className="flex flex-col gap-3">

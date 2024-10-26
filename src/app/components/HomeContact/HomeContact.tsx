@@ -5,7 +5,7 @@ const Contact = () => {
     <div className='h-auto w-full bg-white p-4 sm:p-8'> {/* Changed background to white */}
       <div className='flex items-center justify-center'>
         <h1 className='text-black text-lg sm:text-xl md:text-3xl lg:text-4xl pt-4 sm:pt-6 text-center font-semibold'>
-          "Step into Style – Let's Connect and Make Your Wardrobe Unforgettable!"
+          &quot;Step into Style – Let&apos;s Connect and Make Your Wardrobe Unforgettable!&quot;
         </h1>
       </div>
 

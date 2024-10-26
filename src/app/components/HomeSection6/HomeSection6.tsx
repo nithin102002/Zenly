@@ -10,36 +10,42 @@ import image5 from '../HomeSection6/assets/image5.jpeg';
 const images = [image1, image2, image3, image4, image5];
 
 export default function HomeSection6() {
-  const scrollRef = useRef(null);
+  const scrollRef = useRef<HTMLDivElement | null>(null);
   const [isDragging, setIsDragging] = useState(false);
   const [startX, setStartX] = useState(0);
   const [scrollLeft, setScrollLeft] = useState(0);
 
-  const startDragging = (e) => {
+  const startDragging = (e: React.MouseEvent<HTMLDivElement>) => {
     e.preventDefault();
     setIsDragging(true);
-    setStartX(e.pageX - scrollRef.current.offsetLeft);
-    setScrollLeft(scrollRef.current.scrollLeft);
+    if (scrollRef.current) {
+      setStartX(e.pageX - scrollRef.current.offsetLeft);
+      setScrollLeft(scrollRef.current.scrollLeft);
+    }
   };
 
   const stopDragging = () => {
     setIsDragging(false);
   };
 
-  const onDrag = (e) => {
+  const onDrag = (e: React.MouseEvent<HTMLDivElement>) => {
     if (!isDragging) return;
     e.preventDefault();
-    const x = e.pageX - scrollRef.current.offsetLeft;
-    const walk = (x - startX) * 2;
-    scrollRef.current.scrollLeft = scrollLeft - walk;
+    if (scrollRef.current) {
+      const x = e.pageX - scrollRef.current.offsetLeft;
+      const walk = (x - startX) * 2;
+      scrollRef.current.scrollLeft = scrollLeft - walk;
+    }
   };
 
   const handleScroll = () => {
-    const { scrollLeft, scrollWidth, clientWidth } = scrollRef.current;
-    if (scrollLeft === 0) {
-      scrollRef.current.scrollLeft = scrollWidth - clientWidth * 2;
-    } else if (scrollLeft >= scrollWidth - clientWidth) {
-      scrollRef.current.scrollLeft = clientWidth;
+    if (scrollRef.current) {
+      const { scrollLeft, scrollWidth, clientWidth } = scrollRef.current;
+      if (scrollLeft === 0) {
+        scrollRef.current.scrollLeft = scrollWidth - clientWidth * 2;
+      } else if (scrollLeft >= scrollWidth - clientWidth) {
+        scrollRef.current.scrollLeft = clientWidth;
+      }
     }
   };
 

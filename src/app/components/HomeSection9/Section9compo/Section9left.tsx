@@ -3,17 +3,17 @@ import React, { useState } from 'react';
 
 const Section9left = () => {
   const [text, setText] = useState("Deliver stylish garments crafted from premium materials for every occasion.");
-  const [selectedButton, setSelectedButton] = useState("mission"); // Track selected button
+  const [selectedButton, setSelectedButton] = useState<keyof typeof textOptions>("mission"); // Specify as keyof typeof textOptions
 
   // Define text options for each button
-  const textOptions = {
+  const textOptions: { [key: string]: string } = {
     mission: "Elegance stitch garments works is dedicated to crafting stylish, and high-quality apparel, setting new standards in the fashion industry",
     vision: "Elegance stitch envisions being an expert in fashion, synonymous with timeless style, innovation, and ethical excellence",
     motto: "Quality Dresses for Affordable Prices"
   };
 
   // Handler to update text and selected button
-  const handleButtonClick = (type) => {
+  const handleButtonClick = (type: keyof typeof textOptions) => { // Explicitly specify the type
     setText(textOptions[type]);
     setSelectedButton(type);
   };
@@ -34,7 +34,7 @@ const Section9left = () => {
           {Object.keys(textOptions).map((key) => (
             <button 
               key={key}
-              onClick={() => handleButtonClick(key)}
+              onClick={() => handleButtonClick(key as keyof typeof textOptions)}
               className={`text-xs sm:text-sm md:text-base lg:text-lg px-4 sm:px-6 md:px-8 lg:px-10 py-1 sm:py-2 md:py-2 lg:py-3 rounded font-semibold transition duration-300
                 ${selectedButton === key ? "bg-yellow-500 text-black" : "border-t-4 border-yellow-500 text-black bg-transparent"}`}>
               {`Our ${key.charAt(0).toUpperCase() + key.slice(1)}`}

@@ -1,7 +1,19 @@
 "use client";
 import React, { useState } from 'react';
 
-const Card = ({ title, image, hoverImage, description }) => {
+// Define the type for the props
+interface CardProps {
+  title: string;
+  image: {
+    src: string;
+  };
+  hoverImage: {
+    src: string;
+  };
+  description: string;
+}
+
+const Card: React.FC<CardProps> = ({ title, image, hoverImage, description }) => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
@@ -33,4 +45,4 @@ const Card = ({ title, image, hoverImage, description }) => {
   );
 };
 
-export default Card;
+export default Card;

@@ -4,7 +4,12 @@ import image1 from '../assets/images1.jpg';
 import image2 from '../assets/image2.jpg';
 import image3 from '../assets/image3.jpg';
 
-const HomeSection6Top = ({ onImageClick }) => {
+// Define the props type for the component
+interface HomeSection6TopProps {
+  onImageClick: (index: number) => void; // Explicitly specify the type for onImageClick
+}
+
+const HomeSection6Top: React.FC<HomeSection6TopProps> = ({ onImageClick }) => {
   const images = [image1, image2, image3];
 
   return (

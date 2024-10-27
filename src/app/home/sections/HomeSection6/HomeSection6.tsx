@@ -14,6 +14,8 @@ const images = [image1, image2, image3, image4, image5];
 export default function HomeSection6() {
   return (
     <div className="bg-[#f3f3f3] w-full overflow-hidden py-8 px-4 lg:px-16">
+      <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-gray-800 mb-6 md:mb-8">Client Board</h2>
+      <h3 className="text-2xl text-center mb-6">PRK Groups</h3>
       <Swiper
         spaceBetween={10} // Space for better alignment
         slidesPerView={2} // Show 2 slides for smaller screens by default

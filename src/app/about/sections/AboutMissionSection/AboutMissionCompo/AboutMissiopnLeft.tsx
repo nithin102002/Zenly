@@ -57,4 +57,3 @@ const AboutMissiopnLeft = () => {
 
 export default AboutMissiopnLeft;
 
-AboutMissiopnLeft

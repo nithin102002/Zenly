@@ -20,7 +20,7 @@ const Page3Content = () => {
           <p><b>⦁ Affordable</b> – We make people look good without breaking the bank balance.</p>
         </div>
         <img
-          src="/assets/Primary.svg"
+          src="/assets/Submark.svg"
           alt="Zenly Logo"
           className="h-16 w-16 sm:h-20 sm:w-20 md:h-24 md:w-24 lg:h-28 lg:w-28 xl:h-32 xl:w-32 rounded-full shadow-md mt-5 md:mt-0"
         />

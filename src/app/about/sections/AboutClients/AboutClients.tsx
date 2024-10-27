@@ -2,16 +2,16 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import image1 from '../HomeSection6/assets/image1.png';
-import image2 from '../HomeSection6/assets/image2.jpg';
-import image3 from '../HomeSection6/assets/image3.png';
-import image4 from '../HomeSection6/assets/image4.png';
-import image5 from '../HomeSection6/assets/image5.jpeg';
+import image1 from '../AboutClients/assets/image1.png';
+import image2 from '../AboutClients/assets/image2.jpg';
+import image3 from '../AboutClients/assets/image3.png';
+import image4 from '../AboutClients/assets/image4.png';
+import image5 from '../AboutClients/assets/image5.jpeg';
 import Image from 'next/image';
 
 const images = [image1, image2, image3, image4, image5];
 
-export default function HomeSection6() {
+export default function AboutClients() {
   return (
     <div className="bg-[#f3f3f3] w-full overflow-hidden py-8 px-4 lg:px-16">
       <Swiper
@@ -58,3 +58,4 @@ export default function HomeSection6() {
     </div>
   );
 }
+

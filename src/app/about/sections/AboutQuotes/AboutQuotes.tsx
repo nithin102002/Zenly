@@ -6,7 +6,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 gsap.registerPlugin(ScrollTrigger);
 
-const HomeSection8 = () => {
+const AboutQuotes = () => {
   useEffect(() => {
     // GSAP animation with ScrollTrigger for fade-in and scale-up effect
     gsap.fromTo(
@@ -40,4 +40,4 @@ const HomeSection8 = () => {
   );
 };
 
-export default HomeSection8;
+export default AboutQuotes;

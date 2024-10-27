@@ -1,9 +1,9 @@
 'use client';
 import React, { useRef, useState, useEffect } from 'react';
 import Image, { StaticImageData } from 'next/image';
-import image1 from '../HomeSection10/assets/Image1.jpeg';
-import image2 from '../HomeSection10/assets/Image2.jpeg';
-import image3 from '../HomeSection10/assets/Image3.jpeg';
+import image1 from '../AboutCustomerFeedBack/assets/Image1.jpeg';
+import image2 from '../AboutCustomerFeedBack/assets/Image2.jpeg';
+import image3 from '../AboutCustomerFeedBack/assets/Image3.jpeg';
 
 interface Testimonial {
   name: string;
@@ -36,7 +36,7 @@ const testimonials: Testimonial[] = [
 // Duplicate the testimonials for the looping effect
 const loopedTestimonials = [...testimonials, ...testimonials];
 
-export default function HomeSection10() {
+export default function AboutCustomerFD() {
   const scrollRef = useRef<HTMLDivElement | null>(null);
   const [isDragging, setIsDragging] = useState(false);
   const [startX, setStartX] = useState(0);
@@ -153,3 +153,4 @@ export default function HomeSection10() {
     </div>
   );
 }
+

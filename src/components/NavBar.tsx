@@ -36,13 +36,16 @@ export const NavBar = () => {
             Home
           </Link>
           <Link href="/about" className="mx-2 font-bold hover:text-gray-600">
-            About
+            About-Us
           </Link>
           <Link href="/gallery" className="mx-2 font-bold hover:text-gray-600">
             Gallery
           </Link>
           <Link href="/product" className="mx-2 font-bold hover:text-gray-600">
             Products
+          </Link>
+          <Link href="/store" className="mx-2 font-bold hover:text-gray-600">
+            Store
           </Link>
         </div>
 

@@ -24,7 +24,7 @@ export default function HomeSection2Top() {
             alt="mens-wear"
             className="w-full h-full object-cover filter group-hover:grayscale-0 grayscale transition duration-300 transform group-hover:-translate-y-2 group-hover:shadow-lg"
           />
-          <div className="absolute bottom-4 left-4 right-4 bg-[#A28497] text-white p-4 flex flex-col justify-center items-center transform translate-y-full group-hover:translate-y-0 transition-all duration-300 opacity-0 group-hover:opacity-100">
+          <div className="absolute bottom-4 left-4 right-4 bg-[#171717] text-white  p-4 flex flex-col justify-center items-center transform translate-y-full group-hover:translate-y-0 transition-all duration-300 opacity-0 group-hover:opacity-100">
             <p className="font-bold">Men&apos;s Wear.</p>
             <hr className="w-14 border-t-2 border-[#FFD700]" />
             <p className="text-sm">Sophisticated collection for modern gentlemen</p>
@@ -37,13 +37,12 @@ export default function HomeSection2Top() {
             alt="Women's Wear"
             className="w-full h-full object-cover filter group-hover:grayscale-0 grayscale transition duration-300 transform group-hover:-translate-y-2 group-hover:shadow-lg"
           />
-          <div className="absolute bottom-4 left-4 right-4 bg-[#A28497] text-white p-4 flex flex-col justify-center items-start transform translate-y-full group-hover:translate-y-0 transition-all duration-300 opacity-0 group-hover:opacity-100">
-            <div className="flex items-center">
-              <p className="font-bold mr-2">Women&apos;s Wear</p>
-              <hr className="w-12 border-t-2 border-[#FFD700]" />
-            </div>
-            <p className="text-sm text-[#f5e7ec]">Elegant designs for the modern woman.</p>
+          <div className="absolute bottom-4 left-4 right-4 bg-[#171717] text-white  p-4 flex flex-col justify-center items-center transform translate-y-full group-hover:translate-y-0 transition-all duration-300 opacity-0 group-hover:opacity-100">
+            <p className="font-bold">Women&apos;s Wear.</p>
+            <hr className="w-14 border-t-2 border-[#FFD700]" />
+            <p className="text-sm">Elegant designs for the modern woman.</p>
           </div>
+          
         </div>
       </div>
     </div>

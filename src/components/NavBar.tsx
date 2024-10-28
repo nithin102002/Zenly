@@ -29,7 +29,7 @@ export const NavBar = () => {
     <nav className="bg-white text-black sticky top-0 shadow z-50 h-20 w-full p-4 sm:p-6 md:flex md:justify-between md:items-center"> {/* Changed background to white */}
       <div className="container mx-auto flex justify-between items-center">
         <Link href="/" className="flex items-center">
-          <img src="/assets/Primary.svg" alt="Zenly Logo" className="h-10 md:h-12" />
+          <img src="/assets/Primary_.svg" alt="Zenly Logo" className="h-10 md:h-12 font-bold" />
         </Link>
         <div className={getMenuClasses()}>
           <Link href="/" className="mx-2 font-bold hover:text-gray-600">

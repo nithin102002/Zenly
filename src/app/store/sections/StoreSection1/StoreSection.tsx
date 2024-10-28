@@ -29,12 +29,24 @@ const StoreSection = () => {
       </div>
 
       {/* Google Maps Embed Section */}
-      <div className='w-full md:w-3/5 h-3/5 md:h-3/5 lg:h-2/3 p-4'>
-        <iframe 
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d249128.58097165518!2d77.514994!3d10.361523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bad40b4b8fc2337%3A0x9e2a53d353387ee4!2sNew%20Gandhi%20Market%2C%20Oddanchatram%2C%20Tamil%20Nadu%20624612!5e0!3m2!1sen!2sin!4v1698055823868!5m2!1sen!2sin"
+      <div className='w-full md:w-3/5 h-3/5 md:h-3/5 lg:h-2/3 p-4 relative'>
+        {/* Add a div to act as an overlay to hide the top */}
+        <div style={{
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          right: 0,
+          height: '50px',
+          backgroundColor: '#f3f3f3',
+          zIndex: 1
+        }}></div>
+        
+        {/* Replace the following iframe with your custom map embed code */}
+        <iframe
+          src="https://www.google.com/maps/d/u/0/embed?mid=1kVHosjvn0B1mbACtktmWn30AL0hrNyY&ehbc=2E312F"
           width="600"
           height="450"
-          style={{ border: 0, width: '100%', height: '100%' }}
+          style={{ border: 0, width: '100%', height: '100%', position: 'relative', top: '-10px' }}
           allowFullScreen
           loading="lazy"
           className="rounded-lg shadow-lg"
@@ -45,4 +57,3 @@ const StoreSection = () => {
 }
 
 export default StoreSection;
-

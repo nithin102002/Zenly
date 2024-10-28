@@ -38,8 +38,8 @@ export default function HomeSection10() {
   const [isDragging, setIsDragging] = useState(false);
   const [startX, setStartX] = useState(0);
   const [scrollLeft, setScrollLeft] = useState(0);
-  const [autoScrollActive, setAutoScrollActive] = useState(true);
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
+  const timeoutRef = useRef<NodeJS.Timeout | null>(null);
 
   const startDragging = (e: React.MouseEvent<HTMLDivElement> | React.TouchEvent<HTMLDivElement>) => {
     e.preventDefault();
@@ -49,12 +49,12 @@ export default function HomeSection10() {
       setStartX(pageX - scrollRef.current.offsetLeft);
       setScrollLeft(scrollRef.current.scrollLeft);
     }
+    stopAutoScroll(); // Stop auto-scrolling on user interaction
   };
 
   const stopDragging = () => {
     setIsDragging(false);
-    setAutoScrollActive(false); // Stop auto-scrolling on user interaction
-    setTimeout(() => setAutoScrollActive(true), 5000); // Restart after 5 seconds
+    resetAutoScrollTimeout(); // Restart timeout to enable auto-scroll again
   };
 
   const onDrag = (e: React.MouseEvent<HTMLDivElement> | React.TouchEvent<HTMLDivElement>) => {
@@ -75,7 +75,7 @@ export default function HomeSection10() {
         const scrollAmount = testimonialWidth * 0.8;
         scrollRef.current.scrollBy({ left: scrollAmount, behavior: 'smooth' });
       }
-    }, 5000);
+    }, 2000);
   };
 
   const stopAutoScroll = () => {
@@ -85,19 +85,41 @@ export default function HomeSection10() {
     }
   };
 
+  const resetAutoScrollTimeout = () => {
+    stopAutoScroll(); // Stop any existing auto scroll
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current);
+    }
+    // Restart the auto-scroll after 3 seconds
+    timeoutRef.current = setTimeout(() => {
+      startAutoScroll();
+    }, 3000);
+  };
+
+  const handleScroll = () => {
+    if (!scrollRef.current) return;
+    const scrollWidth = scrollRef.current.scrollWidth - scrollRef.current.clientWidth;
+    if (scrollRef.current.scrollLeft <= 0) {
+      scrollRef.current.scrollLeft = scrollWidth / 3; // Reset to the middle section
+    } else if (scrollRef.current.scrollLeft >= scrollWidth) {
+      scrollRef.current.scrollLeft = scrollWidth / 3; // Reset to the middle section
+    }
+  };
+
   useEffect(() => {
     const slider = scrollRef.current;
     if (slider) {
-      slider.scrollLeft = slider.clientWidth;
+      slider.scrollLeft = slider.clientWidth; // Initial scroll position to show the first testimonial
     }
-    if (autoScrollActive) {
-      startAutoScroll();
-    }
+    resetAutoScrollTimeout(); // Start the timeout for auto scroll
 
     return () => {
       stopAutoScroll();
+      if (timeoutRef.current) {
+        clearTimeout(timeoutRef.current);
+      }
     };
-  }, [autoScrollActive]);
+  }, []);
 
   return (
     <div className="w-full py-8 px-4 lg:px-16">
@@ -116,12 +138,14 @@ export default function HomeSection10() {
         onTouchStart={startDragging}
         onTouchMove={onDrag}
         onTouchEnd={stopDragging}
+        onScroll={handleScroll} // Handle scroll event
       >
         <div className="flex gap-10 w-max select-none">
-          {testimonials.concat(testimonials, testimonials).map((testimonial, index) => (
+          {/* Render testimonials */}
+          {testimonials.concat(testimonials).map((testimonial, index) => (
             <div
               key={index}
-              className="min-w-[300px] max-w-[350px] h-[320px] sm:min-w-[400px] sm:max-w-[450px] sm:h-[400px] md:min-w-[600px] md:max-w-[650px] md:h-[450px] lg:min-w-[800px] lg:max-w-[800px] lg:h-[500px] bg-white rounded-lg shadow-lg p-8 sm:p-10 md:p-12 lg:p-16 relative transition-colors duration-300 hover:bg-black group"
+              className="min-w-[300px] max-w-[350px] h-[320px] sm:min-w-[400px] sm:max-w-[450px] sm:h-[400px] md:min-w-[500px] md:max-w-[550px] md:h-[400px] lg:min-w-[600px] lg:max-w-[650px] lg:h-[450px] bg-white rounded-lg shadow-lg p-8 sm:p-10 md:p-12 lg:p-16 relative transition-colors duration-300 hover:bg-black group"
               style={{ boxShadow: '0 8px 30px rgba(0, 0, 0, 0.1)' }}
             >
               <div className="flex items-center mb-8 sm:mb-10 md:mb-12">

@@ -6,11 +6,11 @@ const ReactPlayer = dynamic(() => import('react-player'), { ssr: false });
 
 export default function HomeSection4() {
     return (
-        <main className="flex flex-col items-center justify-center min-h-screen bg-[#f3f3f3] px-4 md:px-8 lg:px-12">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-gray-800 mb-6 md:mb-8">
+        <main className="flex flex-col items-center justify-center h-full min-h-[50vh] md:min-h-[60vh] lg:min-h-[75vh] xl:min-h-[85vh] bg-[#f3f3f3] px-2 md:px-4 lg:px-12 py-2 md:py-6 lg:py-10">
+            <h1 className="text-lg sm:text-xl md:text-3xl lg:text-5xl xl:text-6xl font-bold text-center text-gray-800 mb-3 md:mb-5 lg:mb-8 xl:mb-10">
                 EXPERIENCE US LIVE.
             </h1>
-            <div className="w-full max-w-md sm:max-w-lg md:max-w-2xl lg:max-w-3xl xl:max-w-4xl">
+            <div className="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-3xl xl:max-w-4xl">
                 <div className="relative" style={{ paddingTop: '56.25%' }}>
                     <ReactPlayer
                         url="https://v.ftcdn.net/04/15/69/72/700_F_415697290_zBlJFddKioqUgBBlebfKHHd9QQNJadQQ_ST.mp4"

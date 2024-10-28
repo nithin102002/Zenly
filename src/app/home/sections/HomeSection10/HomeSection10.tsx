@@ -145,7 +145,7 @@ export default function HomeSection10() {
           {testimonials.concat(testimonials).map((testimonial, index) => (
             <div
               key={index}
-              className="min-w-[300px] max-w-[350px] h-[320px] sm:min-w-[400px] sm:max-w-[450px] sm:h-[400px] md:min-w-[500px] md:max-w-[550px] md:h-[400px] lg:min-w-[600px] lg:max-w-[650px] lg:h-[450px] bg-white rounded-lg shadow-lg p-8 sm:p-10 md:p-12 lg:p-16 relative transition-colors duration-300 hover:bg-black group"
+              className="min-w-[300px] max-w-[350px] h-[320px] sm:min-w-[400px] sm:max-w-[450px] sm:h-[400px] md:min-w-[500px] md:max-w-[550px] md:h-[400px] lg:min-w-[400px] lg:max-w-[550px] lg:h-[450px] bg-white rounded-lg shadow-lg p-8 sm:p-10 md:p-12 lg:p-16 relative transition-colors duration-300 hover:bg-black group"
               style={{ boxShadow: '0 8px 30px rgba(0, 0, 0, 0.1)' }}
             >
               <div className="flex items-center mb-8 sm:mb-10 md:mb-12">

@@ -22,14 +22,14 @@ import u3 from '../product/assets/u3.jpg';
 import u4 from '../product/assets/u4.jpg';
 import u5 from '../product/assets/u5.jpg';
 
-const categories: string[] = ['All', "Men's Wear", "Women's Wear", "Kids' Wear", 'U-form', 'Accessories'];
+const categories: string[] = ['All', "Men's Wear", "Women's Wear", "Kids' Wear", "U-form", 'Accessories'];
 
 const productData: { [key: string]: StaticImageData[] } = {
   'All': [m1, w1, k1, a1, u1, m2, w2, k2, a2, u2, m3, w3, u3, m4, w4, u4, w5, u5, w6],
   "Men's Wear": [m1, m2, m3, m4],
   "Women's Wear": [w1, w2, w3, w4, w5, w6],
   "Kids' Wear": [k1, k2],
-  'Premium Uniforms': [u1, u2, u3, u4, u5],
+  "U-form": [u1, u2, u3, u4, u5],
   'Accessories': [a1, a2],
 };
 

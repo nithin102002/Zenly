@@ -46,7 +46,7 @@ const StoreSection = () => {
           src="https://www.google.com/maps/d/u/0/embed?mid=1kVHosjvn0B1mbACtktmWn30AL0hrNyY&ehbc=2E312F"
           width="600"
           height="450"
-          style={{ border: 0, width: '100%', height: '100%', position: 'relative', top: '-10px' }}
+          style={{ border: 0, width: '100%', height: '100%', position: 'relative', top: '-15px' }}
           allowFullScreen
           loading="lazy"
           className="rounded-lg shadow-lg"

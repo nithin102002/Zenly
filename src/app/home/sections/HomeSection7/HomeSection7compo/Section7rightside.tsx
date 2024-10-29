@@ -6,7 +6,7 @@ const Section7rightside = () => {
       {/* Header with Reduced Animation */}
       <div className="h-[35%] w-full flex flex-row items-center justify-center text-black animate-fade-in duration-200">
         <div className="mt-10">
-          <h1 className="text-base font-bold sm:text-4xl md:text-5xl px-4 mb-2">
+          <h1 className="text-base font-teko  tracking-wide font-bold sm:text-4xl md:text-5xl px-4 mb-2">
             WE ARE TRUSTED BY MORE THAN 120 + LEADING CORPORATE INDUSTRY{" "}
             <span className="text-[#FEAB17]">.</span>
           </h1>
@@ -16,7 +16,7 @@ const Section7rightside = () => {
       {/* Description with Reduced Animation */}
       <div className="h-[30%] w-full text-black flex items-center justify-center animate-fade-in duration-200">
         <div className="flex items-center justify-center">
-          <p className="text-sm sm:text-base md:text-lg px-4">
+          <p className="text-sm font-rubik sm:text-base md:text-lg px-4">
             Discover our latest collection of garments crafted from premium
             cotton. Experience unparalleled comfort and style, perfect for any
             occasion. Shop now for quality you can feel!
@@ -28,7 +28,7 @@ const Section7rightside = () => {
       <div className="h-[35%] w-full ml-8 flex flex-row animate-fade-in duration-200">
         <div className="h-full w-full shadow-2xl rounded-lg overflow-hidden">
           <img
-            src="https://t3.ftcdn.net/jpg/07/09/81/44/240_F_709814423_yoUxElNMhkZzta4oNZAPm3AfFqm2qfdr.jpg"
+            src="/assets/h7.jpg"
             alt="Garment Collection"
             className="object-cover h-full w-full transform transition-transform duration-200 hover:scale-105"
           />
@@ -43,9 +43,9 @@ const Section7rightside = () => {
             ].map((item, index) => (
               <li
                 key={index}
-                className="text-sm sm:text-xl md:text-3xl font-bold mb-3 animate-fade-in duration-200"
+                className="text-sm font-teko  tracking-wide sm:text-xl md:text-3xl font-bold mb-3 animate-fade-in duration-200"
               >
-                <span className="text-[#FEAB17] font-black">✓</span> {item}
+                <span className="text-[#FEAB17] font-black"></span> {item}
               </li>
             ))}
           </ul>

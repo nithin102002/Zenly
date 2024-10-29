@@ -18,9 +18,10 @@ export const NavBar = () => {
         "left-0",
         "gap-10",
         "flex-col",
+        "items-center", // Center items in the dropdown
       ];
     } else {
-      menuClasses = ["hidden", "md:flex"];
+      menuClasses = ["hidden", "md:flex", "items-center", "justify-center"]; // Center items in the main navbar
     }
     return menuClasses.join(" ");
   }
@@ -32,20 +33,28 @@ export const NavBar = () => {
           <img src="/assets/Primary_.svg" alt="Zenly Logo" className="h-10 md:h-12 font-bold" />
         </Link>
         <div className={getMenuClasses()}>
-          <Link href="/" className="mx-2 font-bold hover:text-gray-600">
+          {/* Adjusted text size for slightly smaller links */}
+          <Link href="/" className="mx-4 font-teko  tracking-wide text-md md:text-xl font-bold hover:text-gray-600">
             Home
           </Link>
-          <Link href="/about" className="mx-2 font-bold hover:text-gray-600">
-            About-Us
+          <Link href="/about" className="mx-4 font-teko  tracking-wide text-md md:text-xl font-bold hover:text-gray-600">
+            About-us
           </Link>
-          <Link href="/gallery" className="mx-2 font-bold hover:text-gray-600">
+          <Link href="/gallery" className="mx-4 font-teko  tracking-wide text-md md:text-xl font-bold hover:text-gray-600">
             Gallery
           </Link>
-          <Link href="/product" className="mx-2 font-bold hover:text-gray-600">
+          <Link href="/product" className="mx-4 font-teko  tracking-wide text-md md:text-xl font-bold hover:text-gray-600">
             Products
           </Link>
-          <Link href="/store" className="mx-2 font-bold hover:text-gray-600">
+          <Link href="/store" className="mx-4 font-teko  tracking-wide text-md md:text-xl font-bold hover:text-gray-600">
             Store
+          </Link>
+        </div>
+
+        {/* Separate Contact Us link with reduced size */}
+        <div className="hidden md:flex md:items-center">
+          <Link href="tel:+1234567890" className="mx-2 font-teko  tracking-wide text-sm md:text-lg font-bold hover:text-gray-600">
+            Contact Us: +91 6279645725
           </Link>
         </div>
 

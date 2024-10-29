@@ -30,30 +30,30 @@ const Section1 = () => {
         }}
       />
 
-      {/* Black Overlay */}
+      {/* Whitish Overlay */}
       <div
-        className="absolute inset-0 bg-black"
+        className="absolute inset-0 bg-white"
         style={{
-          opacity: 0.7, // Increase opacity for a darker overlay
+          opacity: 0.6, // Increase opacity for a more whitish effect
         }}
       ></div>
 
       <div className="relative z-10 text-center">
-        <h5 className="text-base sm:text-2xl lg:text-3xl xl:text-4xl text-white font-bold mb-4 fade-in">
+        <h5 className="text-base font-teko  tracking-wide sm:text-2xl lg:text-3xl xl:text-5xl text-black font-semibold mb-4 fade-in">
           Welcome to Zenly Apparels
         </h5>
       </div>
-      <h1 className="text-2xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4 text-white z-10 fade-in">
+      <h1 className="text-2xl font-teko  tracking-wide sm:text-5xl lg:text-8xl xl:text-8xl font-bold mb-4 text-black z-10 fade-in">
         A world of Quality and
       </h1>
-      <h1 className="text-2xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6 text-white z-10 fade-in">
+      <h1 className="text-2xl font-teko  tracking-wide sm:text-5xl lg:text-8xl xl:text-8xl font-bold mb-6 text-black z-10 fade-in">
         Endless Designs
       </h1>
       
       {/* Discover More Button with Link */}
       <div className="mt-7 z-10">
         <Link href="/product"> {/* Change '/about' to your desired path */}
-          <button className="bg-[#FEAB17] hover:bg-[#e59e14] transition duration-300 ease-in-out px-8 sm:px-10 py-3 sm:py-4 rounded-lg text-lg sm:text-xl font-medium shadow-md transform button-scale">
+          <button className="bg-[#FEAB17] hover:bg-[#e59e14] font-teko  tracking-wide transition duration-300 ease-in-out px-8 sm:px-10 py-3 sm:py-4 rounded-lg text-lg sm:text-xl font-medium shadow-md transform button-scale">
             Discover More
           </button>
         </Link>

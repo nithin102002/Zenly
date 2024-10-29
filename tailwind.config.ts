@@ -12,6 +12,11 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily:{
+        teko:["teko","sans-serif"],
+        rubik:["Rubik"]
+      },
+      
     },
   },
   plugins: [],

@@ -5,7 +5,7 @@ import { FaWhatsapp } from 'react-icons/fa'; // Make sure this import is correct
 const WhatsAppIcon = () => {
   return (
     <a
-      href="https://faq.whatsapp.com/5913398998672934" // Updated link
+      href=" https://wa.me/6379645725" // Updated link
       target="_blank"
       rel="noopener noreferrer"
       style={{

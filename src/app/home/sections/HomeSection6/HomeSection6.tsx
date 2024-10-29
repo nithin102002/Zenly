@@ -9,23 +9,24 @@ import image2 from '../HomeSection6/assets/image2.jpg';
 import image3 from '../HomeSection6/assets/image3.png';
 import image4 from '../HomeSection6/assets/image4.png';
 import image5 from '../HomeSection6/assets/image5.jpeg';
+import image6 from '../HomeSection6/assets/image6.jpg';
 import Image from 'next/image';
 
-const images = [image1, image2, image3, image4, image5];
+const images = [image1, image2, image3, image4, image5,image6];
 
 export default function HomeSection6() {
   return (
     <div className="bg-[#f3f3f3] w-full overflow-hidden py-8 px-4 lg:px-16 relative">
-      <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-gray-800 mb-6 md:mb-8">Client Board</h2>
-      <h3 className="text-2xl text-center mb-6">PRK Groups</h3>
+      <h2 className="text-3xl font-teko  tracking-wide sm:text-4xl md:text-5xl font-bold text-center text-gray-800 mb-6 md:mb-8">Client Board</h2>
+      <h3 className="text-xl font-teko  tracking-wide sm:text-3xl md:text-4xl font-bold text-center text-gray-800 mb-6 md:mb-8">PRK Groups</h3>
 
       {/* Custom Navigation Buttons */}
-      <div className="swiper-button-prev-custom absolute left-0 top-1/2 transform -translate-y-1/2 z-10 cursor-pointer">
+      <div className="swiper-button-prev-custom absolute left-0 bottom-1/4 transform -translate-y-1/2 z-10 cursor-pointer">
         <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-gray-600 hover:text-gray-900" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
         </svg>
       </div>
-      <div className="swiper-button-next-custom absolute right-0 top-1/2 transform -translate-y-1/2 z-10 cursor-pointer">
+      <div className="swiper-button-next-custom absolute right-0 bottom-1/4 transform -translate-y-1/2 z-10 cursor-pointer">
         <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-gray-600 hover:text-gray-900" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
         </svg>

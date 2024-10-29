@@ -124,7 +124,7 @@ export default function HomeSection10() {
   return (
     <div className="w-full py-8 px-4 lg:px-16">
       <div className="text-center mb-8">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800">
+        <h2 className="text-3xl font-teko  tracking-wide sm:text-4xl md:text-5xl font-bold text-gray-800">
           Customer feedbacks
         </h2>
       </div>
@@ -145,40 +145,30 @@ export default function HomeSection10() {
           {testimonials.concat(testimonials).map((testimonial, index) => (
             <div
               key={index}
-              className="min-w-[300px] max-w-[350px] h-[320px] sm:min-w-[400px] sm:max-w-[450px] sm:h-[400px] md:min-w-[500px] md:max-w-[550px] md:h-[400px] lg:min-w-[400px] lg:max-w-[550px] lg:h-[450px] bg-white rounded-lg shadow-lg p-8 sm:p-10 md:p-12 lg:p-16 relative transition-colors duration-300 hover:bg-black group"
+              className="w-full max-w-[60vh] h-[40vh] bg-white rounded-lg shadow-lg p-6 relative transition-colors duration-300 hover:bg-black group flex-shrink-0"
               style={{ boxShadow: '0 8px 30px rgba(0, 0, 0, 0.1)' }}
             >
-              <div className="flex items-center mb-8 sm:mb-10 md:mb-12">
-                <div className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 relative rounded-full overflow-hidden">
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20 relative rounded-full overflow-hidden">
                   <Image
                     src={testimonial.photo}
                     alt={testimonial.name}
-                    fill
-                    style={{ objectFit: 'cover' }}
+                    layout="fill"
+                    objectFit="cover"
                     className="object-cover"
                     draggable="false"
                   />
                 </div>
-                <div className="ml-6 sm:ml-8 md:ml-10">
-                  <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-gray-800 group-hover:text-white">
+                <div className="ml-4">
+                  <h3 className="text-base font-teko  tracking-wide sm:text-lg md:text-xl font-semibold text-gray-800 group-hover:text-white">
                     {testimonial.name}
                   </h3>
-                  <p className="text-sm sm:text-base md:text-lg lg:text-xl text-orange-600 group-hover:text-white">
+                  <p className="text-xs font-teko  tracking-wide sm:text-sm md:text-base text-orange-600 group-hover:text-white">
                     {testimonial.role}
                   </p>
                 </div>
-                <div className="absolute top-4 right-6 md:top-6 md:right-8">
-                  <svg
-                    className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 text-black opacity-20 group-hover:text-white"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                  >
-                    <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
-                  </svg>
-                </div>
               </div>
-              <p className="text-gray-600 text-sm sm:text-base md:text-lg lg:text-2xl leading-relaxed group-hover:text-white">
+              <p className="text-xs font-rubik sm:text-sm md:text-base leading-relaxed text-gray-600 group-hover:text-white">
                 {testimonial.review}
               </p>
             </div>

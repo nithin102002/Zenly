@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Teko:wght@505&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rubik:ital,wght@0,300..900;1,300..900&family=Teko&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -14,3 +16,4 @@
     right: '10px';
   }
 }
+

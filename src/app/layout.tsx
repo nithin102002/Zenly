@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { NavBar } from "../components/NavBar";
 import WhatsAppIcon from "@/components/WhatsAppIcon";
+import Contact from "./home/sections/HomeContact/HomeContact";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -33,6 +34,7 @@ export default function RootLayout({
         <NavBar/>
         {children}
         <WhatsAppIcon />
+        <Contact/>
       </body>
     </html>
   );

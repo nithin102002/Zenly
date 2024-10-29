@@ -23,7 +23,6 @@ export default function Home(){
          <HomeSection8/>
         <HomeSection9/>
         <HomeSection10/>
-        <HomeContact/>
         </>
       );
    }

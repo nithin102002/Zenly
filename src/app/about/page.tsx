@@ -1,15 +1,15 @@
-import AboutMissionSection from "./sections/AboutMissionSection/AboutMissionSection";
+import AboutOurLogo from "./sections/AboutOurLogo/AboutOurLogo";
+import AboutOurPassion from "./sections/AboutOurPassion/AboutOurPassion";
 import AboutOurStory from "./sections/AboutOurStory/AboutOurStory";
-import AboutQuotes from "./sections/AboutQuotes/AboutQuotes";
 import AboutTeam from "./sections/AboutTeam/AboutTeam";
 
-export default function About(){
-    return (
-      <>
-      <AboutOurStory/>
-      <AboutQuotes/>
-    <AboutMissionSection/>
-    <AboutTeam/>
-      </>
-    )
-   }
+export default function About() {
+  return (
+    <>
+      <AboutOurStory />
+      <AboutOurPassion/>
+      <AboutOurLogo/>
+      <AboutTeam />
+    </>
+  );
+}

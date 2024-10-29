@@ -14,9 +14,9 @@ export default function HomeSection2Bottom() {
           className="w-full h-full object-cover filter group-hover:grayscale-0 grayscale transition duration-300 transform group-hover:-translate-y-2 group-hover:shadow-lg"
         />
         <div className="absolute bottom-4 left-4 right-4 bg-[#171717] text-white  p-4 flex flex-col justify-center items-center transform translate-y-full group-hover:translate-y-0 transition-all duration-300 opacity-0 group-hover:opacity-100">
-          <p className="font-bold">Kid&apos;s Wear</p>
+          <p className="font-medium font-teko  tracking-wide">Kid&apos;s Wear</p>
           <hr className="w-14 border-t-2 border-[#FFD700]" />
-          <p className="text-sm">Comfortable and stylish clothing for children.</p>
+          <p className="text-sm font-teko  tracking-wide">Comfortable and stylish clothing for children.</p>
         </div>
       </div>
 
@@ -28,9 +28,9 @@ export default function HomeSection2Bottom() {
           className="w-full h-full object-cover filter group-hover:grayscale-0 grayscale transition duration-300 transform group-hover:-translate-y-2 group-hover:shadow-lg"
         />
         <div className="absolute bottom-4 left-4 right-4 bg-[#171717] text-white  p-4 flex flex-col justify-center items-center transform translate-y-full group-hover:translate-y-0 transition-all duration-300 opacity-0 group-hover:opacity-100">
-          <p className="font-bold">Accessories</p>
+          <p className="font-medium font-teko  tracking-wide">Accessories</p>
           <hr className="w-14 border-t-2 border-[#FFD700]" />
-          <p className="text-sm">Hats, Footwear, and more.</p>
+          <p className="text-sm font-teko  tracking-wide">Hats, Footwear, and more.</p>
         </div>
       </div>
 
@@ -42,9 +42,9 @@ export default function HomeSection2Bottom() {
           className="w-full h-full object-cover filter group-hover:grayscale-0 grayscale transition duration-300 transform group-hover:-translate-y-2 group-hover:shadow-lg"
         />
         <div className="absolute bottom-4 left-4 right-4 bg-[#171717] text-white p-4 flex flex-col justify-center items-center transform translate-y-full group-hover:translate-y-0 transition-all duration-300 opacity-0 group-hover:opacity-100">
-          <p className="font-bold">Premium Uniforms</p>
+          <p className="font-medium font-teko  tracking-wide">Premium Uniforms</p>
           <hr className="w-14 border-t-2 border-[#FFD700]" />
-          <p className="text-sm">Professional attire for every workplace.</p>
+          <p className="text-sm font-teko  tracking-wide">Professional attire for every workplace.</p>
         </div>
       </div>
     </div>

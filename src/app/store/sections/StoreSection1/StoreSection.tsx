@@ -5,10 +5,10 @@ const StoreSection = () => {
   const googleMapsUrl = `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(shopAddress)}`;
 
   const VisitUsCard = () => (
-    <div className='flex flex-col justify-center items-start w-full md:w-1/3 p-6 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 mb-6 md:mb-0'>
-      <h1 className='text-3xl font-teko  tracking-wide font-bold text-black mb-4'>Visit Us</h1>
+    <div className='flex flex-col justify-between items-start w-full md:w-[50%] lg:w-[40%] h-[350px] p-6 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 mb-6 md:mb-0 pt-8'> {/* Increased width on larger screens */}
+      <h1 className='text-3xl font-teko tracking-wide font-bold text-black mb-4'>Visit Us</h1>
       <p className='text-lg font-rubik text-gray-800 mb-2'>
-        <span className='font-semibold font-teko  tracking-wide'>Zenly Apparels</span><br />
+        <span className='font-semibold font-teko tracking-wide'>Zenly Apparels</span><br />
         New Gandhi Market,<br />
         Oddanchatram,<br />
         Dindigul,<br />
@@ -19,7 +19,7 @@ const StoreSection = () => {
         href={googleMapsUrl} 
         target="_blank" 
         rel="noopener noreferrer" 
-        className='mt-4 px-4 py-2 bg-[#FEAB17] font-teko  tracking-wide text-black font-medium rounded-md hover:bg-[#d79a14] transition duration-200'
+        className='mt-4 px-4 py-2 bg-[#FEAB17] font-teko tracking-wide text-black font-medium rounded-md hover:bg-[#d79a14] transition duration-200'
       >
         Get Directions
       </a>
@@ -29,8 +29,7 @@ const StoreSection = () => {
   return (
     <div className='flex flex-col items-center w-full p-4 bg-[#f3f3f3]'>
       {/* Store Details Section */}
-      <div className='flex flex-col md:flex-row justify-center items-center w-full gap-6 mb-8'>
-        <VisitUsCard />
+      <div className='flex flex-col md:flex-row justify-center items-center w-full gap-6 mt-4 mb-6'>
         <VisitUsCard />
       </div>
 

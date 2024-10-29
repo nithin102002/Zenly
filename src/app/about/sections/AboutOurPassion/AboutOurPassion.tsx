@@ -42,13 +42,13 @@ const AboutOurPassion = () => {
   }, []);
 
   return (
-    <div className="flex flex-col md:flex-row items-center justify-center p-6 bg-[#f3f3f3]">
+    <div className="min-h-[60vh] flex flex-col md:flex-row items-center justify-center p-4 sm:p-5 bg-[#f3f3f3]">
       {/* Right Section: Our Passion */}
       <div 
-        className="w-full md:w-1/2 flex flex-col items-center text-left mb-4 md:mb-0 md:order-2"
+        className="w-full md:w-1/2 flex flex-col items-center text-center mb-4 md:mb-0 md:order-2" // Centering text in mobile view
         ref={textRef} // Reference for text animation
       >
-        <h1 className="text-3xl font-teko   sm:text-4xl md:text-5xl font-extrabold text-black  tracking-wide mb-6">
+        <h1 className="text-3xl font-teko sm:text-4xl md:text-5xl font-extrabold text-black tracking-wide mb-2 sm:mb-4">
           Our Passion
         </h1>
         <p className="text-base font-rubik md:text-lg lg:text-xl font-normal text-black leading-relaxed tracking-wide max-w-prose mb-2 md:ml-4">

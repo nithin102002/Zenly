@@ -5,7 +5,7 @@ const StoreHeading = () => {
     <div 
       className="h-[50vh] relative flex items-center justify-center bg-cover bg-center"
       style={{
-        backgroundImage: "url('https://pixydrops.com/linoorhtml/images/background/image-7.jpg')"
+        backgroundImage: "url('/assets/contact.jpg')"
       }}
     >
       {/* Black overlay with 65% opacity */}

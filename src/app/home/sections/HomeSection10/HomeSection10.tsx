@@ -124,7 +124,7 @@ export default function HomeSection10() {
   return (
     <div className="w-full py-8 px-4 lg:px-16">
       <div className="text-center mb-8">
-        <h2 className="text-3xl font-teko  tracking-wide sm:text-4xl md:text-5xl font-bold text-gray-800">
+        <h2 className="text-3xl font-teko tracking-wide sm:text-4xl md:text-5xl font-bold text-gray-800">
           Customer feedbacks
         </h2>
       </div>
@@ -145,11 +145,11 @@ export default function HomeSection10() {
           {testimonials.concat(testimonials).map((testimonial, index) => (
             <div
               key={index}
-              className="w-full max-w-[60vh] h-[40vh] bg-white rounded-lg shadow-lg p-6 relative transition-colors duration-300 hover:bg-black group flex-shrink-0"
+              className="w-[80vw] sm:w-[70vw] md:w-[50vw] lg:max-w-[60vh] h-[30vh] sm:h-[35vh] md:h-[40vh] lg:h-[40vh] bg-white rounded-lg shadow-lg p-6 relative transition-colors duration-300 hover:bg-black group flex-shrink-0"
               style={{ boxShadow: '0 8px 30px rgba(0, 0, 0, 0.1)' }}
             >
               <div className="flex items-center mb-4">
-                <div className="w-12 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20 relative rounded-full overflow-hidden">
+                <div className="w-10 h-10 sm:w-14 sm:h-14 md:w-16 md:h-16 lg:w-20 lg:h-20 relative rounded-full overflow-hidden">
                   <Image
                     src={testimonial.photo}
                     alt={testimonial.name}
@@ -160,10 +160,10 @@ export default function HomeSection10() {
                   />
                 </div>
                 <div className="ml-4">
-                  <h3 className="text-base font-teko  tracking-wide sm:text-lg md:text-xl font-semibold text-gray-800 group-hover:text-white">
+                  <h3 className="text-sm font-teko tracking-wide sm:text-base md:text-lg font-semibold text-gray-800 group-hover:text-white">
                     {testimonial.name}
                   </h3>
-                  <p className="text-xs font-teko  tracking-wide sm:text-sm md:text-base text-orange-600 group-hover:text-white">
+                  <p className="text-xs font-teko tracking-wide sm:text-sm md:text-base text-orange-600 group-hover:text-white">
                     {testimonial.role}
                   </p>
                 </div>

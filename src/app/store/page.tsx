@@ -1,7 +1,5 @@
 import dynamic from 'next/dynamic';
 import StoreHeading from './sections/StoreSection1/StoreHeading';
-import { div } from 'framer-motion/client';
-
 const StoreSection = dynamic(() => import("./sections/StoreSection1/StoreSection"), { 
   ssr: false 
 });

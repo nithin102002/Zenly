@@ -7,7 +7,7 @@ export default function HomeSection2Top() {
     <div className="flex flex-col lg:flex-row justify-between items-center gap-8 px-4 lg:px-16 py-8">
       {/* Left Part */}
       <div className="lg:w-1/2 text-center lg:text-left">
-        <h2 className="text-6xl font-bold font-teko  tracking-wide mb-4">
+        <h2 className="text-6xl font-bold font-teko tracking-wide mb-4">
           DISCOVER TIMELESS FASHION CRAFTED WITH CARE FOR YOU.
         </h2>
         <p className="text-xl font-normal font-rubik">
@@ -22,12 +22,12 @@ export default function HomeSection2Top() {
           <Image
             src={image1}
             alt="mens-wear"
-            className="w-full h-full object-cover filter group-hover:grayscale-0 grayscale transition duration-300 transform group-hover:-translate-y-2 group-hover:shadow-lg"
+            className="w-full h-full object-cover transition duration-300 transform group-hover:-translate-y-2 group-hover:shadow-lg"
           />
-          <div className="absolute bottom-4 left-4 right-4 bg-[#171717] text-white  p-4 flex flex-col justify-center items-center transform translate-y-full group-hover:translate-y-0 transition-all duration-300 opacity-0 group-hover:opacity-100">
-            <p className="font-medium font-teko  tracking-wide">Men&apos;s Wear.</p>
+          <div className="absolute bottom-4 left-4 right-4 bg-[#171717] text-white p-4 flex flex-col justify-center items-center transform translate-y-full group-hover:translate-y-0 transition-all duration-300 opacity-0 group-hover:opacity-100">
+            <p className="font-medium font-teko tracking-wide">Men&apos;s Wear.</p>
             <hr className="w-14 border-t-2 border-[#FFD700]" />
-            <p className="text-sm font-teko  tracking-wide">Sophisticated collection for modern gentlemen</p>
+            <p className="text-sm font-teko tracking-wide">Sophisticated collection for modern gentlemen</p>
           </div>
         </div>
 
@@ -35,14 +35,13 @@ export default function HomeSection2Top() {
           <Image
             src={image2}
             alt="Women's Wear"
-            className="w-full h-full object-cover filter group-hover:grayscale-0 grayscale transition duration-300 transform group-hover:-translate-y-2 group-hover:shadow-lg"
+            className="w-full h-full object-cover transition duration-300 transform group-hover:-translate-y-2 group-hover:shadow-lg"
           />
-          <div className="absolute bottom-4 left-4 right-4 bg-[#171717] text-white  p-4 flex flex-col justify-center items-center transform translate-y-full group-hover:translate-y-0 transition-all duration-300 opacity-0 group-hover:opacity-100">
-            <p className="font-medium font-teko  tracking-wide">Women&apos;s Wear.</p>
+          <div className="absolute bottom-4 left-4 right-4 bg-[#171717] text-white p-4 flex flex-col justify-center items-center transform translate-y-full group-hover:translate-y-0 transition-all duration-300 opacity-0 group-hover:opacity-100">
+            <p className="font-medium font-teko tracking-wide">Women&apos;s Wear.</p>
             <hr className="w-14 border-t-2 border-[#FFD700]" />
-            <p className="text-sm font-teko  tracking-wide">Elegant designs for the modern woman.</p>
+            <p className="text-sm font-teko tracking-wide">Elegant designs for the modern woman.</p>
           </div>
-          
         </div>
       </div>
     </div>

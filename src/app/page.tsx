@@ -1,4 +1,3 @@
-import HomeContact from "./home/sections/HomeContact/HomeContact";
 import HomeSection1 from "./home/sections/HomeSection1/HomeSection1";
 import HomeSection10 from "./home/sections/HomeSection10/HomeSection10";
 import HomeSection2 from "./home/sections/HomeSection2/HomeSection2";

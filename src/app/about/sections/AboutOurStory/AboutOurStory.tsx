@@ -38,7 +38,7 @@ const AboutOurStory = () => {
   }, []);
 
   // Zoom effect for the image on hover
-  const handleImageHover = (isHover) => {
+  const handleImageHover = (isHover: boolean) => {
     if (isHover) {
       gsap.to(imgRef.current, {
         scale: 1.1, // Scale up to 110%
@@ -53,6 +53,7 @@ const AboutOurStory = () => {
       });
     }
   };
+  
 
   return (
     <div className="flex flex-col bg-[#f3f3f3] md:flex-row items-center justify-center p-6">

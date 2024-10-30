@@ -5,7 +5,7 @@ const StoreSection = () => {
   const googleMapsUrl = `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(shopAddress)}`;
 
   const VisitUsCard = () => (
-    <div className='flex flex-col justify-between items-start w-full md:w-[50%] lg:w-[40%] h-[350px] p-6 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 mb-6 md:mb-0 pt-8'> {/* Increased width on larger screens */}
+    <div className='flex flex-col justify-between items-start w-full md:w-[50%] lg:w-[40%] h-[350px] p-6 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 mb-6 md:mb-0 pt-8'>
       <h1 className='text-3xl font-teko tracking-wide font-bold text-black mb-4'>Visit Us</h1>
       <p className='text-lg font-rubik text-gray-800 mb-2'>
         <span className='font-semibold font-teko tracking-wide'>Zenly Apparels</span><br />
@@ -34,7 +34,18 @@ const StoreSection = () => {
       </div>
 
       {/* Google Maps Embed Section */}
-      <div className='w-full h-80 sm:h-[60vh] md:h-[70vh] lg:h-[80vh] p-4'>
+      <div className='w-full h-80 sm:h-[60vh] md:h-[70vh] lg:h-[80vh] p-4 relative'>
+        {/* Overlay to hide the top part of the iframe */}
+        <div style={{
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          right: 0,
+          height: '74px',  // Increased height to fully cover the top section
+          backgroundColor: '#f3f3f3',
+          zIndex: 1
+        }}></div>
+
         <iframe
           src="https://www.google.com/maps/d/u/0/embed?mid=1kVHosjvn0B1mbACtktmWn30AL0hrNyY&ehbc=2E312F"
           width="100%"

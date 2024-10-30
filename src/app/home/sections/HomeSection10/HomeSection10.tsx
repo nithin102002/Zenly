@@ -1,9 +1,9 @@
 'use client';
 import React, { useRef, useState, useEffect } from 'react';
 import Image, { StaticImageData } from 'next/image';
-import image1 from '../HomeSection10/assets/Image1.jpeg';
-import image2 from '../HomeSection10/assets/Image2.jpeg';
-import image3 from '../HomeSection10/assets/Image3.jpeg';
+import image1 from '../../../../../public/assets/CF1.jpeg';
+import image2 from '../../../../../public/assets/CF2.jpeg';
+import image3 from '../../../../../public/assets/CF3.jpeg';
 
 interface Testimonial {
   name: string;
@@ -122,7 +122,7 @@ export default function HomeSection10() {
   }, []);
 
   return (
-    <div className="w-full py-8 px-4 lg:px-16">
+    <div className="bg-[#f3f3f3] w-full py-8 px-4 lg:px-16">
       <div className="text-center mb-8">
         <h2 className="text-3xl font-teko tracking-wide sm:text-4xl md:text-5xl font-bold text-gray-800">
           Customer feedbacks

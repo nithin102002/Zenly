@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import image1 from '../assets/mens-wear.jpg';
-import image2 from '../assets/womens-wear.jpg';
+import image1 from '../../../../../../public/assets/mens-wear.jpg';
+import image2 from '../../../../../../public/assets/womens-wear.jpg';
 
 export default function HomeSection2Top() {
   return (

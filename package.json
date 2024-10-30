@@ -11,6 +11,7 @@
   "dependencies": {
     "@fortawesome/free-solid-svg-icons": "^6.6.0",
     "@fortawesome/react-fontawesome": "^0.2.2",
+    "@heroicons/react": "^2.1.5",
     "framer-motion": "^11.11.10",
     "gsap": "^3.12.5",
     "next": "14.2.16",
@@ -22,8 +23,8 @@
     "zenly": "file:"
   },
   "devDependencies": {
-    "@types/node": "^20",
-    "@types/react": "^18",
+    "@types/node": "^20.17.3",
+    "@types/react": "^18.3.12",
     "@types/react-dom": "^18",
     "eslint": "^8",
     "eslint-config-next": "14.2.16",

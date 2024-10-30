@@ -4,20 +4,23 @@ import { Navigation, Pagination } from 'swiper/modules'; // Updated import state
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import image1 from '../HomeSection6/assets/image1.png';
-import image2 from '../HomeSection6/assets/image2.jpg';
-import image3 from '../HomeSection6/assets/image3.png';
-import image4 from '../HomeSection6/assets/image4.png';
-import image5 from '../HomeSection6/assets/image5.jpeg';
-import image6 from '../HomeSection6/assets/image6.jpg';
+import image1 from '../../../../../public/assets/client1.png';
+import image2 from '../../../../../public/assets/client2.jpg';
+import image3 from '../../../../../public/assets/client3.png';
+import image4 from '../../../../../public/assets/client4.png';
+import image5 from '../../../../../public/assets/client5.jpeg';
+import image6 from '../../../../../public/assets/client6.jpg';
+import image7 from '../../../../../public/assets/client7.jpg';
+import image8 from '../../../../../public/assets/client8.jpg';
+import image9 from '../../../../../public/assets/client9.jpg';
 import Image from 'next/image';
 
-const images = [image1, image2, image3, image4, image5,image6];
+const images = [image1, image2, image3, image4, image5,image6,image7,image8,image9];
 
 export default function HomeSection6() {
   return (
     <div className="bg-[#f3f3f3] w-full overflow-hidden py-8 px-4 lg:px-16 relative">
-      <h2 className="text-3xl font-teko  tracking-wide sm:text-4xl md:text-5xl font-bold text-center text-gray-800 mb-6 md:mb-8">Client Board</h2>
+      <h2 className="text-3xl font-teko  tracking-wide sm:text-4xl md:text-5xl font-bold text-center text-gray-800 mb-6 md:mb-8">Our Elite Clients</h2>
       <h3 className="text-xl font-teko  tracking-wide sm:text-3xl md:text-4xl font-bold text-center text-gray-800 mb-6 md:mb-8">PRK Groups</h3>
 
       {/* Custom Navigation Buttons */}

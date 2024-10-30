@@ -110,7 +110,7 @@ import m4 from '../../../public/assets/M4.jpg';
 import w1 from '../../../public/assets/W1.jpg';
 import w2 from '../../../public/assets/W2.jpg';
 import w3 from '../../../public/assets/W3.jpg';
-import w4 from '../../../public/assets/W4.jpg';
+import w4 from '../../../public/assets/W5.jpg';
 import w5 from '../../../public/assets/W4.jpg';
 import w6 from '../../../public/assets/W6.jpg';
 import k1 from '../../../public/assets/K1.jpg';

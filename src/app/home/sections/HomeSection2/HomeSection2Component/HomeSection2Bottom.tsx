@@ -1,7 +1,7 @@
 import Image from 'next/image';
-import image3 from '../assets/kids-wear.jpg';
-import image4 from '../assets/accessories.jpeg';
-import image5 from '../assets/uniform-wear.jpg';
+import image3 from '../../../../../../public/assets/kids-wear.jpg';
+import image4 from '../../../../../../public/assets/accessories.jpeg';
+import image5 from '../../../../../../public/assets/uniform-wear.jpg';
 
 export default function HomeSection2Bottom() {
   return (

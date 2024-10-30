@@ -58,7 +58,7 @@ export const NavBar = () => {
         {/* Right Section: Contact Us */}
         <div className="hidden md:flex md:w-1/4 justify-end items-center">
           <Link href="tel:+1234567890" className="mx-2 font-teko tracking-wide text-sm md:text-lg font-bold hover:text-gray-600">
-            Contact Us: +91 6279645725
+            Contact Us: +91 6379645725
           </Link>
         </div>
 

@@ -15,7 +15,7 @@ const HomeSectionLeft = () => {
           alt="Stylish pieces"
           className="w-42 h-42 sm:w-36 sm:h-36 md:w-44 md:h-44 lg:w-52 lg:h-52 rounded-lg shadow-md object-cover" 
         />
-        <p className="text-xl font-teko mt-4  tracking-wide sm:text-xl md:text-2xl lg:text-5xl text-gray-700 leading-relaxed">
+        <p className="text-xl font-teko mt-4  tracking-wide sm:text-xl md:text-2xl lg:text-4xl text-gray-700 leading-relaxed">
           Elevate your daily wardrobe with comfortable, stylish pieces designed for effortless living.
         </p>
       </div>

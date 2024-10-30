@@ -599,14 +599,14 @@ const Section1: React.FC = () => {
 
       {/* Text and Button Elements */}
       <div className="relative z-10 text-center">
-        <h5 className="text-2xl font-teko tracking-wide sm:text-2xl lg:text-3xl xl:text-5xl text-black font-semibold mb-8 fade-in">
+        <h5 className="text-xl font-teko tracking-wide sm:text-2xl lg:text-3xl xl:text-5xl text-black font-semibold mb-8 fade-in">
           Welcome to Zenly Apparels
         </h5>
       </div>
-      <h1 className="text-5xl font-teko tracking-wide sm:text-4xl lg:text-8xl xl:text-8xl font-bold mb-4 text-black z-10 fade-in">
+      <h1 className="text-4xl font-teko tracking-wide sm:text-4xl lg:text-8xl xl:text-8xl font-bold mb-4 text-black z-10 fade-in">
         A world of Quality and
       </h1>
-      <h1 className="text-5xl font-teko tracking-wide sm:text-4xl lg:text-8xl xl:text-8xl font-bold mb-6 text-black z-10 fade-in">
+      <h1 className="text-4xl font-teko tracking-wide sm:text-4xl lg:text-8xl xl:text-8xl font-bold mb-6 text-black z-10 fade-in">
         Endless Designs
       </h1>
       

@@ -469,12 +469,12 @@ import Link from 'next/link';
 import gsap from 'gsap';
 
 const Section1: React.FC = () => {
-  const [isSmallOrMediumScreen, setIsSmallOrMediumScreen] = useState<boolean>(false);
+  const [isSmallScreen, setIsSmallScreen] = useState<boolean>(window.innerWidth <= 640);
 
   useEffect(() => {
     // Function to handle screen size check
     const handleResize = () => {
-      setIsSmallOrMediumScreen(window.innerWidth <= 1024);
+      setIsSmallScreen(window.innerWidth <= 640);
     };
 
     // Initial check and event listener
@@ -511,7 +511,7 @@ const Section1: React.FC = () => {
       )
       .to(".fade-in-text", { opacity: 0, duration: 1, ease: "power2.in" });
 
-    if (window.innerWidth > 1024) {
+    if (!isSmallScreen) {
       // GSAP timeline for left-to-right sliding image
       const slideInTimelineLeft = gsap.timeline({ repeat: -1, repeatDelay: 2 });
       slideInTimelineLeft.fromTo(
@@ -541,7 +541,7 @@ const Section1: React.FC = () => {
     return () => {
       window.removeEventListener('resize', handleResize);
     };
-  }, []);
+  }, [isSmallScreen]);
 
   return (
     <div className="relative h-[90vh] w-full flex flex-col items-center justify-center px-8 sm:px-4 lg:px-20 overflow-hidden">
@@ -554,8 +554,8 @@ const Section1: React.FC = () => {
         }}
       ></div>
 
-      {/* Only render sliding images if it's a large screen */}
-      {!isSmallOrMediumScreen && (
+      {/* Only render sliding images if it's not a small screen */}
+      {!isSmallScreen && (
         <>
           {/* Sliding Image from Left to Right */}
           <div
@@ -617,7 +617,9 @@ const Section1: React.FC = () => {
   );
 };
 
-export default Section1;
+export default Section1;
+
+
 
 // belwo code is with the word animation also
 // "use client";

@@ -52,11 +52,9 @@ const AboutOurPassion = () => {
           Our Passion
         </h1>
         <p className="text-base font-rubik md:text-lg lg:text-xl font-normal text-black leading-relaxed tracking-wide max-w-prose mb-2 md:ml-4">
-          At Zenly Apparels, our passion lies in creating high-quality apparel that not only meets the needs of our customers but also resonates with their lifestyle. 
-          We believe in the power of clothing to express individuality and confidence. Our commitment to sustainability and ethical production drives us to innovate and improve.
+        At Zenly Apparels, fashion is our craft and commitment. We’re dedicated to creating garments that combine premium quality with modern design, ensuring each piece is stylish, comfortable, and made to last.
           <br /><br />
-          Each piece we create is a testament to our dedication to craftsmanship, ensuring that our customers receive only the best. 
-          Join us as we continue to push boundaries and redefine the fashion experience.
+          Rooted in PRK Garments' legacy of excellence, our passion drives us to deliver apparel that goes beyond trends, embodying elegance and craftsmanship in every detail. For us, fashion isn’t just about what you wear—it's about creating lasting value and style you can trust.
         </p>
       </div>
 

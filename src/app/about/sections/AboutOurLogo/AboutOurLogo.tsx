@@ -56,9 +56,9 @@ const AboutOurLogo = () => {
           Our Logo
         </h1>
         <p className="text-base font-rubik md:text-lg lg:text-xl font-normal text-black leading-relaxed tracking-wide max-w-prose mb-2 md:ml-4">
-          Our logo embodies the spirit of Zenly Apparels, representing our commitment to quality and style. It symbolizes our mission to provide apparel that enhances individuality and confidence.
+        Our logo captures Zenly Apparels’ essence: elegance and modern style. The hanger shape symbolizes our commitment to high-quality fashion, with the letter "Z" as its focal point, representing Zenly. The remaining letters ("E," "N," "L," and "Y") are subtly integrated, creating a balanced and unique design.
           <br /><br />
-          Crafted with precision, our logo reflects our dedication to excellence in every aspect of our work. We aim to create a strong visual identity that resonates with our customers and stands the test of time.
+          The thin Monument Valley font in the wordmark conveys refined elegance, while the submark—a bold "Z"-shaped hanger—emphasizes our brand identity. This logo embodies our vision: timeless style, crafted with sophistication.
         </p>
       </div>
 

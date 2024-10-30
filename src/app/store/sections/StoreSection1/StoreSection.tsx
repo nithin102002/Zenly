@@ -14,7 +14,7 @@ const StoreSection = () => {
         Dindigul,<br />
         Tamil Nadu- 624612, India
       </p>
-      <p className='text-gray-600 font-rubik mb-2'>📞 Contact: <span className='font-semibold'>(91) 6379645725</span></p>
+      <p className='text-gray-600 font-rubik mb-2'>📞 Contact: <span className='font-semibold'>(+91) 6379645725</span></p>
       <a 
         href={googleMapsUrl} 
         target="_blank" 
@@ -34,14 +34,14 @@ const StoreSection = () => {
       </div>
 
       {/* Google Maps Embed Section */}
-      <div className='w-full h-80 sm:h-[60vh] md:h-[70vh] lg:h-[80vh] p-4 relative'>
+      <div className='w-full max-w-[800px] h-80 sm:h-[60vh] md:h-[70vh] lg:h-[80vh] p-4 relative'>
         {/* Overlay to hide the top part of the iframe */}
         <div style={{
           position: 'absolute',
           top: 0,
           left: 0,
           right: 0,
-          height: '74px',  // Increased height to fully cover the top section
+          height: '81px',  // Height to fully cover the top section
           backgroundColor: '#f3f3f3',
           zIndex: 1
         }}></div>

@@ -38,26 +38,26 @@ export const NavBar = () => {
 
         {/* Center Section: Menu Links */}
         <div className={`${getMenuClasses()} md:w-1/2 justify-center`}>
-          <Link href="/" className="mx-4 font-teko tracking-wide text-md md:text-2xl font-bold hover:text-gray-600">
+          <Link href="/" className="mx-4 font-teko tracking-wide text-xs sm:text-sm md:text-lg lg:text-2xl font-bold hover:text-gray-600">
             Home
           </Link>
-          <Link href="/about" className="mx-4 font-teko tracking-wide text-md md:text-2xl font-bold hover:text-gray-600">
-            About-us
+          <Link href="/about" className="mx-4 font-teko tracking-wide text-xs sm:text-sm md:text-lg lg:text-2xl font-bold hover:text-gray-600">
+            AboutUs
           </Link>
-          <Link href="/gallery" className="mx-4 font-teko tracking-wide text-md md:text-2xl font-bold hover:text-gray-600">
+          <Link href="/gallery" className="mx-4 font-teko tracking-wide text-xs sm:text-sm md:text-lg lg:text-2xl font-bold hover:text-gray-600">
             Gallery
           </Link>
-          <Link href="/product" className="mx-4 font-teko tracking-wide text-md md:text-2xl font-bold hover:text-gray-600">
+          <Link href="/product" className="mx-4 font-teko tracking-wide text-xs sm:text-sm md:text-lg lg:text-2xl font-bold hover:text-gray-600">
             Products
           </Link>
-          <Link href="/store" className="mx-4 font-teko tracking-wide text-md md:text-2xl font-bold hover:text-gray-600">
+          <Link href="/store" className="mx-4 font-teko tracking-wide text-xs sm:text-sm md:text-lg lg:text-2xl font-bold hover:text-gray-600">
             Store
           </Link>
         </div>
 
         {/* Right Section: Contact Us */}
         <div className="hidden md:flex md:w-1/4 justify-end items-center">
-          <Link href="tel:+1234567890" className="mx-2 font-teko tracking-wide text-sm md:text-lg font-bold hover:text-gray-600">
+          <Link href="tel:+1234567890" className="mx-2 font-teko tracking-wide text-xs sm:text-sm md:text-lg lg:text-xl font-bold hover:text-gray-600">
             Contact Us: +91 6379645725
           </Link>
         </div>

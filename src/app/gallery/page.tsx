@@ -65,29 +65,17 @@ import React from 'react';
 import Image from 'next/image';
 import { StaticImageData } from 'next/image';
 import { motion } from 'framer-motion';
-import m1 from '../../../public/assets/M1.jpg';
-import m2 from '../../../public/assets/M2.jpg';
-import m3 from '../../../public/assets/M3.jpg';
-import m4 from '../../../public/assets/M4.jpg';
-import w1 from '../../../public/assets/W1.jpg';
-import w2 from '../../../public/assets/W2.jpg';
-import w3 from '../../../public/assets/W3.jpg';
-import w4 from '../../../public/assets/W4.jpg';
-import w5 from '../../../public/assets/W5.jpg';
-import w6 from '../../../public/assets/W6.jpg';
-import k1 from '../../../public/assets/K1.jpg';
-import k2 from '../../../public/assets/K2.jpeg';
-import k3 from '../../../public/assets/K3.jpg';
-import u1 from '../../../public/assets/U1.jpeg';
-import u2 from '../../../public/assets/U2.jpeg';
-import u3 from '../../../public/assets/U3.jpg';
-import u4 from '../../../public/assets/U4.jpg';
-import a1 from '../../../public/assets/A1.jpeg';
-import a2 from '../../../public/assets/A2.jpg';
+import g1 from '../../../public/assets/G1.jpg';
+import g2 from '../../../public/assets/G2.jpg';
+import g3 from '../../../public/assets/G3.jpg';
+import g4 from '../../../public/assets/G4.jpg';
+import g5 from '../../../public/assets/G5.jpg';
+import g6 from '../../../public/assets/G6.jpg';
+
 
 // Define gallery images
 const galleryData: StaticImageData[] = [
-m1,m2,m3,m4,w1,w2,w3,w4,w5,w6,k1,k2,k3,u1,u2,u3,u4,a1,a2
+g1,g2,g3,g4,g5,g6
 ];
 
 export default function Gallery() {
@@ -98,21 +86,22 @@ export default function Gallery() {
         {galleryData.map((image, index) => (
           <motion.div
             key={index}
-            className="relative mb-4 overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300"
+            className="relative mb-4 overflow-hidden  rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.4, delay: index * 0.1 }}
             whileHover={{ scale: 1.05 }}
           >
             <Image
-              src={image}
-              alt={`Gallery Image ${index + 1}`}
-              layout="responsive"
-              objectFit="cover"
-              className="rounded-lg"
-              width={300}
-              height={200}
-            />
+                src={image}
+                alt={`Gallery Image ${index + 1}`}
+                width={400}
+                height={200}
+                objectFit="cover"
+                className="rounded-lg"
+                unoptimized={true}
+              />
+
             {/* <div className="absolute inset-0 bg-black opacity-0 hover:opacity-40 transition-opacity duration-300 flex items-center justify-center rounded-lg">
               <span className="text-white font-semibold text-lg">Image {index + 1}</span>
             </div> */}

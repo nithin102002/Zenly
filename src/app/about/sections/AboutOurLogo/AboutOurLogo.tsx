@@ -1,4 +1,4 @@
-"use client";
+'use client';
 import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -10,7 +10,6 @@ const AboutOurLogo = () => {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
-    // Animation for text sliding in from right
     gsap.fromTo(textRef.current, 
       { x: 100, opacity: 0 }, 
       {
@@ -24,11 +23,9 @@ const AboutOurLogo = () => {
       }
     );
 
-    // Check if the screen is mobile size
     const isMobile = window.matchMedia("(max-width: 768px)").matches;
-    const zoomScale = isMobile ? 1.05 : 1.1; // Reduced scale for mobile
+    const zoomScale = isMobile ? 1.05 : 1.1;
 
-    // Animation for image zoom effect while scrolling
     gsap.fromTo(imgRef.current, 
       { scale: 1 }, 
       {
@@ -46,23 +43,21 @@ const AboutOurLogo = () => {
   }, []);
 
   return (
-    <div className="min-h-screen flex flex-col md:flex-row items-center justify-center p-4 sm:p-6 bg-[#f3f3f3]"> {/* Adjusted height and padding */}
-      {/* Left Section: Logo Description */}
+    <div className="min-h-screen flex flex-col md:flex-row items-center justify-center p-8 md:p-10 lg:p-16 bg-[#f3f3f3]">
       <div 
         className="w-full md:w-1/2 flex flex-col items-center text-left mb-4 md:mb-0 md:order-1 max-h-[70vh] overflow-y-auto" 
         ref={textRef}
       >
-        <h1 className="text-3xl font-teko sm:text-4xl md:text-5xl font-extrabold text-black tracking-wide mb-4 sm:mb-6"> {/* Adjusted margin bottom */}
+        <h1 className="text-3xl font-teko sm:text-4xl md:text-5xl font-extrabold text-black tracking-wide mb-4 sm:mb-6">
           Our Logo
         </h1>
         <p className="text-base font-rubik md:text-lg lg:text-xl font-normal text-black leading-relaxed tracking-wide max-w-prose mb-2 md:ml-4">
-        Our logo captures Zenly Apparels’ essence: elegance and modern style. The hanger shape symbolizes our commitment to high-quality fashion, with the letter "Z" as its focal point, representing Zenly. The remaining letters ("E," "N," "L," and "Y") are subtly integrated, creating a balanced and unique design.
+          Our logo captures Zenly Apparels&apos; essence: elegance and modern style. The hanger shape symbolizes our commitment to high-quality fashion, with the letter &quot;Z&quot; as its focal point, representing Zenly. The remaining letters (&quot;E,&quot; &quot;N,&quot; &quot;L,&quot; and &quot;Y&quot;) are subtly integrated, creating a balanced and unique design.
           <br /><br />
-          The thin Monument Valley font in the wordmark conveys refined elegance, while the submark—a bold "Z"-shaped hanger—emphasizes our brand identity. This logo embodies our vision: timeless style, crafted with sophistication.
+          The thin Monument Valley font in the wordmark conveys refined elegance, while the submark—a bold &quot;Z&quot;-shaped hanger—emphasizes our brand identity. This logo embodies our vision: timeless style, crafted with sophistication.
         </p>
       </div>
 
-      {/* Right Section: Logo */}
       <div className="w-full md:w-1/2 flex justify-center mb-4 md:mb-0 md:order-2">
         <img
           ref={imgRef}

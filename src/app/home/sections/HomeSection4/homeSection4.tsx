@@ -1,7 +1,6 @@
 "use client";
 
 import dynamic from 'next/dynamic';
-
 const ReactPlayer = dynamic(() => import('react-player'), { ssr: false });
 
 export default function HomeSection4() {
@@ -10,10 +9,10 @@ export default function HomeSection4() {
             <h1 className="text-lg font-teko  tracking-wide sm:text-xl md:text-3xl lg:text-5xl xl:text-6xl font-bold text-center text-gray-800 mb-3 md:mb-5 lg:mb-8 xl:mb-10">
                 EXPERIENCE US LIVE.
             </h1>
-            <div className="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-3xl xl:max-w-4xl">
+            <div className="w-full  sm:max-w-md md:max-w-lg lg:max-w-full xl:max-w-4xl">
                 <div className="relative" style={{ paddingTop: '56.25%' }}>
                     <ReactPlayer
-                        url="https://v.ftcdn.net/04/15/69/72/700_F_415697290_zBlJFddKioqUgBBlebfKHHd9QQNJadQQ_ST.mp4"
+                        url="/assets/Zenly.mp4"
                         className="absolute top-0 left-0 w-full h-full"
                         width="100%"
                         height="100%"

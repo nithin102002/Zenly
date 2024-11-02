@@ -5,7 +5,7 @@ const StoreHeading = () => {
     <div 
       className="h-[50vh] relative flex items-center justify-center bg-cover bg-center"
       style={{
-        backgroundImage: "url('/assets/contact.jpg')"
+        backgroundImage: "url('/assets/pass.jpg')"
       }}
     >
       {/* Black overlay with 65% opacity */}

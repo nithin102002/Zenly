@@ -401,7 +401,7 @@ const Section1: React.FC = () => {
   }
 
   return (
-    <div className="relative h-[90vh] w-full flex flex-col items-center justify-center px-8 sm:px-4 lg:px-20 overflow-hidden">
+    <div className="relative h-[90vh] w-full flex flex-col items-center justify-center px-8 sm:px-3 lg:px-20 overflow-hidden">
       {/* Background Image Layer with Zoom Effect */}
       <div 
         className="absolute inset-0 bg-cover bg-center background-zoom bg-white opacity-50"

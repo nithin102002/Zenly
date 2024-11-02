@@ -450,10 +450,10 @@ const Section1: React.FC = () => {
           Welcome to Zenly Apparels
         </h5>
       </div>
-      <h1 className="text-5xl font-teko tracking-wide sm:text-4xl lg:text-8xl xl:text-8xl font-bold mb-4 text-black z-10 fade-in">
+      <h1 className="text-4xl font-teko tracking-wide sm:text-4xl lg:text-8xl xl:text-8xl font-bold mb-4 text-black z-10 fade-in">
         A world of Quality and
       </h1>
-      <h1 className="text-5xl font-teko tracking-wide sm:text-4xl lg:text-8xl xl:text-8xl font-bold mb-6 text-black z-10 fade-in">
+      <h1 className="text-4xl font-teko tracking-wide sm:text-4xl lg:text-8xl xl:text-8xl font-bold mb-6 text-black z-10 fade-in">
         Endless Designs
       </h1>
       

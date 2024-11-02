@@ -2,9 +2,7 @@
 import Link from "next/link";
 import { useState } from "react";
 
-interface NavBarProps {}
-
-export const NavBar: React.FC<NavBarProps> = () => {
+export const NavBar: React.FC = () => {
   const [isopen, setIsopen] = useState<boolean>(false);
 
   const handleLinkClick = (): void => {
@@ -56,7 +54,7 @@ export const NavBar: React.FC<NavBarProps> = () => {
             onClick={handleLinkClick}
             className="mx-4 font-teko tracking-wide text-xs sm:text-sm md:text-lg lg:text-2xl font-bold hover:text-gray-600"
           >
-            AboutUs
+            About Us
           </Link>
           <Link
             href="/gallery"
